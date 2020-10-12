@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trading Holdings</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body style="background-color:black;">
+
+<div style="position: absolute;left:10%;top:95px;width:690px;height:40px;border:5px solid #0000; background: #0413db; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h1>Tradecoin Holdings of DeFo</h1>	
+</div>
+
+<div style="position: absolute;left:10%;top:150px;width:50px;height:40px;border:5px solid #0000; background: #FF1493; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h2>Sr</h2>
+</div>
+
+<div style="position: absolute;left:10%;top:205px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>1</h2>
+</div>
+
+<div style="position: absolute;left:10%;top:260px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>2</h2>
+</div>
+
+<div style="position: absolute;left:10%;top:315px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>3</h2>
+</div>
+
+<div style="position: absolute;left:10%;top:370px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>4</h2>
+</div>
+
+<div style="position: absolute;left:10%;top:425px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>5</h2>
+</div>
+
+
+<div style="position: absolute;left:15%;top:150px;width:220px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>Currency Name</h2>	
+</div>
+
+<div style="position: absolute;left:15%;top:205px;width:220px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">EURN</h2>	
+</div>
+
+<div style="position: absolute;left:15%;top:260px;width:220px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">	USDN</h2>	
+</div>
+
+<div style="position: absolute;left:15%;top:315px;width:220px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">CNYN</h2>	
+</div>
+
+<div style="position: absolute;left:15%;top:370px;width:220px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">RUBN</h2>	
+</div>
+
+<div style="position: absolute;left:15%;top:425px;width:220px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">NGNN</h2>	
+</div>
+
+<div style="position: absolute;left:31.5%;top:150px;width:155px;height:40px;border:5px solid #0000; background: #0413db; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h2>Stake</h2>	
+</div>
+
+<div style="position: absolute;left:31.5%;top:205px;width:155px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel1"></div>
+		<script>
+    $.getJSON('https://nodes.wavesnodes.com/addresses/data/3PFhcMmEZoQTQ6ohA844c7C9M8ZJ18P8dDj/%25s%25s%25s__stakingBalance__DUk2YTxhRoAqMJLus4G2b3fR8hMHVh6eiyFx5r29VR6t__3PG3iKrREHEC8BhRymLngyZGvcfNb7T8sNs', 
+	function(data1) {
+        var text1 = 
+		`
+		${(data1.value/1000000).toFixed(2)} €<br>
+		</b>`
+        $(".mypanel1").html(text1);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+<!-----price Column 2------->
+
+<div style="position: absolute;left:31.5%;top:260px;width:155px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel2"></div>
+		<script>
+    $.getJSON('https://nodes.wavesnodes.com/addresses/data/3PNikM6yp4NqcSU8guxQtmR5onr2D4e8yTJ/rpd_balance_DG2xFkPdDwKUoBkzGAhQtLpSGzfXLiCYPEzeKH2Ad24p_3PG3iKrREHEC8BhRymLngyZGvcfNb7T8sNs', 
+	function(data2) {
+        var text2 = 
+		`
+		${(data2.value/1000000).toFixed(2)} $<br>
+		</b>`
+        $(".mypanel2").html(text2);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+
+<!-----price Column 3------->
+
+<div style="position: absolute;left:31.5%;top:315px;width:155px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel3"></div>
+		<script>
+    $.getJSON('https://nodes.wavesnodes.com/addresses/data/3PFhcMmEZoQTQ6ohA844c7C9M8ZJ18P8dDj/%25s%25s%25s__stakingBalance__9LNqjybyCX1oexCub4yY7hdJf6aeP4HeV5LpsjcNHwRR__3PG3iKrREHEC8BhRymLngyZGvcfNb7T8sNs', 
+	function(data3) {
+        var text3 = 
+		`
+		${(data3.value/1000000).toFixed(2)} ¥<br>
+		</b>`
+        $(".mypanel3").html(text3);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+<!-----price Column 4------->
+
+<div style="position: absolute;left:31.5%;top:370px;width:155px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel4"></div>
+		<script>
+    $.getJSON('https://nodes.wavesnodes.com/addresses/data/3PFhcMmEZoQTQ6ohA844c7C9M8ZJ18P8dDj/%25s%25s%25s__stakingBalance__eWeMD5KNeuRaALCAb4uuJKtAvon2JcTyXQyoBMhuN2X__3PG3iKrREHEC8BhRymLngyZGvcfNb7T8sNs', 
+	function(data4) {
+        var text4 = 
+		`
+		${(data4.value/1000000).toFixed(2)} RUB<br>
+		</b>`
+        $(".mypanel4").html(text4);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+<!-----price Column 5------->
+
+<div style="position: absolute;left:31.5%;top:425px;width:155px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel5"></div>
+		<script>
+    $.getJSON('https://nodes.wavesnodes.com/addresses/data/3PFhcMmEZoQTQ6ohA844c7C9M8ZJ18P8dDj/%25s%25s%25s__stakingBalance__5NmV5VAhkqormdwvaQjE54yPEkNwSRtcXxhLkJbVQqkN__3PG3iKrREHEC8BhRymLngyZGvcfNb7T8sNs', 
+	function(data5) {
+        var text5 = 
+		`
+		${(data5.value/1000000).toFixed(2)} ₦<br>
+		</b>`
+        $(".mypanel5").html(text5);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+
+
+<div style="position: absolute;left:43.5%;top:150px;width:190px;height:40px;border:5px solid #0000; background: #0413db; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h2>Capital
+	</h2>	
+</div>
+
+
+<div style="position: absolute;left:43.5%;top:205px;width:190px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	<div class="mypanel6">845</div>
+
+</div>
+
+<div style="position: absolute;left:43.5%;top:260px;width:190px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	<div class="mypanel">1000</div>
+</div>
+
+<div style="position: absolute;left:43.5%;top:315px;width:190px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	<div class="mypanel">6700</div>	    
+</div>
+
+<div style="position: absolute;left:43.5%;top:370px;width:190px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	<div class="mypanel">75700</div>	    
+</div>
+
+<div style="position: absolute;left:43.5%;top:425px;width:190px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	<div class="mypanel">382000</div>	    
+</div>
+	
+
+	</h2>	
+</div>
+
+<img src="Token.png" style="position:fixed; left:15%; top:155px; width:40px; height:40px; border:none;border-radius: 20px;">
+<img src="price.png" style="position:fixed; left:31.5%; top:155px; width:40px; height:40px; border:none;border-radius: 20px;">
+<img src="marketcap.jpg" style="position:fixed; left:44%; top:160px; width:30px; height:30px; border:none;border-radius: 20px;">
+
+	
+
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;height:500px;}
+
+.icon-bar {
+  position: fixed;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.8s ease;
+  color: white;
+  font-size: 15px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+</style>
+<body>
+
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
