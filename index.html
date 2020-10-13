@@ -196,10 +196,167 @@
     <font color="black"><h2>
 	<div class="mypanel">3820000</div>	    
 </div>
-	
+	</h2>
 
+<div style="position: absolute;left:780px;top:95px;width:395px;height:40px;border:5px solid #0000; background: #0413db; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h1>Tradecoin Assets Holdings</h1>	
+</div>
+
+<div style="position: absolute;left:780px;top:150px;width:50px;height:40px;border:5px solid #0000; background: #FF1493; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h2>Sr</h2>
+</div>
+
+<div style="position: absolute;left:780px;top:205px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>1</h2>
+</div>
+
+<div style="position: absolute;left:780px;top:260px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>2</h2>
+</div>
+
+<div style="position: absolute;left:780px;top:315px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>3</h2>
+</div>
+
+<div style="position: absolute;left:780px;top:370px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>4</h2>
+</div>
+
+<div style="position: absolute;left:780px;top:425px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>5</h2>
+</div>
+
+
+<div style="position: absolute;left:845px;top:150px;width:160px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>Currency Name</h2>	
+</div>
+
+<div style="position: absolute;left:845px;top:205px;width:160px;height:40px;border:5px solid #0000; background: #f2a900; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">BTC</h2>	
+</div>
+
+<div style="position: absolute;left:845px;top:260px;width:160px;height:40px;border:5px solid #0000; background: #d3d3d3; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">LTC</h2>	
+</div>
+
+<div style="position: absolute;left:845px;top:315px;width:160px;height:40px;border:5px solid #0000; background: #ecf0f1; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">ETH</h2>	
+</div>
+
+<div style="position: absolute;left:845px;top:370px;width:160px;height:40px;border:5px solid #0000; background: #0545eb; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">WAVES</h2>	
+</div>
+
+<div style="position: absolute;left:845px;top:425px;width:160px;height:40px;border:5px solid #0000; background: #49d431; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">TURTLE NETWORK</h2>	
+</div>	
+</div>
+
+<div style="position: absolute;left:1020px;top:150px;width:155px;height:40px;border:5px solid #0000; background: #0413db; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h2>Holding Amount</h2>	
+</div>
+
+<div style="position: absolute;left:1020px;top:205px;width:155px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel_1"></div>
+		<script>
+    $.getJSON('https://api.blockcypher.com/v1/btc/main/addrs/379P4CkKAqNoB51zGoHVVcX3f3AEwV5qNH', 
+	function(data_1) {
+        var text_1 = 
+		`
+		${(data_1.balance/100000000).toFixed(8)} ฿<br>
+		</b>`
+        $(".mypanel_1").html(text_1);
+    });	
+	</script>
+	
 	</h2>	
 </div>
+
+
+<!-----price Column 2------->
+
+<div style="position: absolute;left:1020px;top:260px;width:155px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel_2"></div>
+		<script>
+    $.getJSON('https://api.blockcypher.com/v1/ltc/main/addrs/36SApEuWEXj4BWio8Y46Yjp1edraDdRAGD', 
+	function(data_2) {
+        var text_2 = 
+		`
+		${(data_2.balance/100000000).toFixed(8)} Ł<br>
+		</b>`
+        $(".mypanel_2").html(text_2);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+
+<!-----price Column 3------->
+
+<div style="position: absolute;left:1020px;top:315px;width:155px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel_3"></div>
+		<script>
+    $.getJSON('https://api.blockcypher.com/v1/eth/main/addrs/0x8Da4C680535b46799F108e14D717DaA07Cb58eCb', 
+	function(data_3) {
+        var text_3 = 
+		`
+		${(data_3.balance/1000000000000000000).toFixed(8)} Ξ<br>
+		</b>`
+        $(".mypanel_3").html(text_3);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+<!-----price Column 4------->
+
+<div style="position: absolute;left:1020px;top:370px;width:155px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel_4"></div>
+		<script>
+    $.getJSON('https://nodes.wavesnodes.com/addresses/balance?address=3PG3iKrREHEC8BhRymLngyZGvcfNb7T8sNs', 
+	function(data_4) {
+        var text_4 = 
+		`
+		${(data_4[0].balance/100000000).toFixed(6)} W<br>
+		</b>`
+        $(".mypanel_4").html(text_4);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+
+<!-----price Column 5------->
+
+<div style="position: absolute;left:1020px;top:425px;width:155px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel_5"></div>
+		<script>
+    $.getJSON('https://privatenode.blackturtle.eu/addresses/balance/3JxoLH2YzWGzs9SrjRTo35NS5sgSk3Xm947', 
+	function(data_5) {
+        var text_5 = 
+		`
+		${(data_5.balance/100000000).toFixed(6)} TN<br>
+		</b>`
+        $(".mypanel_5").html(text_5);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
 
 </body>
 </html> 
