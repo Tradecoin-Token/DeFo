@@ -265,7 +265,7 @@
 	function(data_1) {
         var text_1 = 
 		`
-		${(data_1.balance/100000000).toFixed(8)} ฿<br>
+		${(data_1.final_balance/100000000).toFixed(8)} ฿<br>
 		</b>`
         $(".mypanel_1").html(text_1);
     });	
@@ -282,7 +282,7 @@
 	
 	<div class="mypanel_2"></div>
 		<script>
-    $.getJSON('https://api.blockcypher.com/v1/ltc/main/addrs/36SApEuWEXj4BWio8Y46Yjp1edraDdRAGD', 
+    $.getJSON('https://api.blockcypher.com/v1/ltc/main/addrs/MCeK88KUBeaUz1zhER3SNP4QyLT2Cuk82v', 
 	function(data_2) {
         var text_2 = 
 		`
