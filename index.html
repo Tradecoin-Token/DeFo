@@ -226,6 +226,10 @@
     <font color="black"><h2>5</h2>
 </div>
 
+<div style="position: absolute;left:780px;top:480px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>6</h2>
+</div>
+
 
 <div style="position: absolute;left:845px;top:150px;width:160px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
     <font color="black"><h2>Currency Name</h2>	
@@ -252,6 +256,11 @@
 </div>	
 </div>
 
+<div style="position: absolute;left:845px;top:480px;width:160px;height:40px;border:5px solid #0000; background: #12aafc; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">MATIC</h2>	
+</div>	
+</div>
+
 <div style="position: absolute;left:1020px;top:150px;width:155px;height:40px;border:5px solid #0000; background: #0413db; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
     <font color="white"><h2>Holding Amount</h2>	
 </div>
@@ -265,7 +274,7 @@
 	function(data_1) {
         var text_1 = 
 		`
-		${(data_1.final_balance/100000000).toFixed(8)} ฿<br>
+		${(data_1.balance/100000000).toFixed(8)} ฿<br>
 		</b>`
         $(".mypanel_1").html(text_1);
     });	
@@ -282,7 +291,7 @@
 	
 	<div class="mypanel_2"></div>
 		<script>
-    $.getJSON('https://api.blockcypher.com/v1/ltc/main/addrs/MCeK88KUBeaUz1zhER3SNP4QyLT2Cuk82v', 
+    $.getJSON('https://api.blockcypher.com/v1/ltc/main/addrs/36SApEuWEXj4BWio8Y46Yjp1edraDdRAGD', 
 	function(data_2) {
         var text_2 = 
 		`
@@ -356,6 +365,28 @@
 	
 	</h2>	
 </div>
+
+<!-----price Column 6------->
+
+<div style="position: absolute;left:1020px;top:480px;width:155px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel_6"></div>
+		<script>
+    $.getJSON('https://api.ethplorer.io/getAddressInfo/0x8da4c680535b46799f108e14d717daa07cb58ecb?apiKey=freekey', 
+	function(data_6) {
+        var text_6 = 
+		`
+		${(data_6['tokens'][1].balance/1000000000000000000).toFixed(2)}<br>
+		</b>`
+        $(".mypanel_6").html(text_6);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+
 
 
 </body>
